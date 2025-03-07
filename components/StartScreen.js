@@ -100,7 +100,7 @@ export default function StartScreen({ onStart }) {
               type="number"
               value={settings[type].min}
               onChange={(e) => handleChange(type, 'min', parseInt(e.target.value))}
-              className="w-24 px-2 py-1 mr-2 rounded-md bg-gray-700 text-white"
+              className="w-16 px-2 py-1 mr-2 rounded-md bg-gray-700 text-white"
               min="1"
               aria-label={`Minimum value for ${type}`}
             />
@@ -109,7 +109,7 @@ export default function StartScreen({ onStart }) {
               type="number"
               value={settings[type].max}
               onChange={(e) => handleChange(type, 'max', parseInt(e.target.value))}
-              className="w-24 px-2 py-1 rounded-md bg-gray-700 text-white"
+              className="w-16 px-2 py-1 rounded-md bg-gray-700 text-white"
               min="1"
               aria-label={`Maximum value for ${type}`}
             />
