@@ -139,7 +139,8 @@ export default function Game({ settings, onRestart, onEnd }) {
         <h1 className="text-3xl font-bold mb-4 text-center">solve the problem</h1>
         <p className="mb-6 text-center text-4xl">{problem.question}</p>
         <input
-          type="number"
+          type="tel"
+          inputMode="numeric"
           value={answer}
           onChange={handleAnswerChange}
           ref={inputRef}
